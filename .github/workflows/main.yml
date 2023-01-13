@@ -25,4 +25,4 @@ jobs:
           artifacts: "${{ github.workspace }}/files/*"
           tag: "${{ github.event.inputs.NAME }}_${{ env.BUILD_TIME }}"
           bodyFile: "./info.txt"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
