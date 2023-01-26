@@ -6,4 +6,4 @@ jobs:
     runs-on: macOS-latest
     steps:
       - name: Get secret
-        run: echo "Your secret Pat value is ${{secrets.PAT}} "
+        run: echo Your secret Pat value is ${{ secrets.PAT }} 
