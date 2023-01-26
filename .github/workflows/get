@@ -1,0 +1,9 @@
+name: Get secret
+on:
+  workflow_dispatch
+jobs:
+  build:
+    runs-on: macOS-latest
+    steps:
+      - name: Get secret
+        run: echo "Your secret Pat value is \n ${{secrets.PAT}} "
