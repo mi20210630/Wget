@@ -17,7 +17,7 @@ jobs:
           echo "Wget of mi20210630 developed" >> info.txt
           cd ${{ github.workspace }}
           mkdir files && cd files
-          wget -O ${{ github.event.inputs.NAME }} ${{ github.event.inputs.URL }}
+          curl -O ${{ github.event.inputs.NAME }} -L ${{ github.event.inputs.URL }}
           
       - name: Upload to Release‌‌...
         uses: ncipollo/release-action@v1.8.0
